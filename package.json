@@ -1,0 +1,72 @@
+{
+  "name": "fast-vue-example-component",
+  "version": "0.1.0",
+  "description": "Example Component authored using microsoft/fast with Vue",
+  "keywords": [
+    "fast",
+    "custom-element",
+    "shadow-dom"
+  ],
+  "homepage": "https://github.com/renoirb/experiments-202104-fast-vue-example-component#readme",
+  "bugs": {
+    "url": "https://github.com/renoirb/experiments-202104-fast-vue-example-component/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renoirb/experiments-202104-fast-vue-example-component.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Renoir Boulanger",
+    "email": "contribs@renoirboulanger.com",
+    "url": "https://renoirb.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('Dependencies must be installed with Yarn: https://yarnpkg.com/')\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target wc-async --inline-vue --name fast-vue-example-component 'src/main.js'",
+    "lint": "vue-cli-service lint"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "root": true
+  },
+  "dependencies": {
+    "@microsoft/fast-components": "^1.20.2",
+    "@microsoft/fast-element": "^1.0.2",
+    "core-js": "^3.6.5",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "volta": {
+    "node": "14.16.1"
+  }
+}
